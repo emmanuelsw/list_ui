@@ -1,4 +1,5 @@
 import 'package:beautiful_list/model/lesson.dart';
+import 'package:beautiful_list/detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -7,7 +8,7 @@ class ListCard extends StatelessWidget {
 
   ListCard(this.lesson);
 
-  Widget listTile(Lesson lesson) {
+  Widget listTile(BuildContext context, Lesson lesson) {
     return ListTile(
       contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
       leading: Container(
@@ -54,6 +55,12 @@ class ListCard extends StatelessWidget {
         ],
       ),
       trailing: Icon(Icons.keyboard_arrow_right, color: Colors.white, size: 30.0),
+      onTap: () {
+        Navigator.push(
+          context, 
+          CupertinoPageRoute(builder: (BuildContext context) => DetailPage(lesson: lesson)),
+        );
+      },
     );
   }
 
@@ -72,7 +79,7 @@ class ListCard extends StatelessWidget {
           )
         ]
       ),
-      child: listTile(lesson),
+      child: listTile(context, lesson),
     );
   }
 }

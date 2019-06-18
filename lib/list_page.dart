@@ -17,7 +17,7 @@ class _ListPageState extends State<ListPage> {
     return AppBar(
       backgroundColor: Color.fromRGBO(58, 66, 86, 1.0),
       elevation: 0.1,
-      title: Text(widget.title),
+      title: Text(widget.title, style: TextStyle(fontWeight: FontWeight.bold)),
       actions: <Widget>[
         IconButton(
           icon: Icon(IconData(0xF394, fontFamily: CupertinoIcons.iconFont, fontPackage: CupertinoIcons.iconFontPackage)),

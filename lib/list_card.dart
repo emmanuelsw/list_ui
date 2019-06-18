@@ -20,7 +20,7 @@ class ListCard extends StatelessWidget {
         ),
         child: Icon(
           IconData(
-            62319,
+            0xF2C1,
             fontFamily: CupertinoIcons.iconFont,
             fontPackage: CupertinoIcons.iconFontPackage,
           ),
@@ -30,7 +30,7 @@ class ListCard extends StatelessWidget {
       ),
       title: Text(
         lesson.title,
-        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        style: TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: 15.5),
       ),
       subtitle: Row(
         children: <Widget>[
@@ -48,7 +48,7 @@ class ListCard extends StatelessWidget {
             flex: 4,
             child: Padding(
               padding: EdgeInsets.only(left: 8.0),
-              child: Text(lesson.level, style: TextStyle(color: Colors.white)),
+              child: Text(lesson.level, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13)),
             ),
           ),
         ],

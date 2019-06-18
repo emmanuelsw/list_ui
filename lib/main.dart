@@ -9,7 +9,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'List Demo',
-      theme: ThemeData(primaryColor: Color.fromRGBO(58, 66, 86, 1.0)),
+      theme: ThemeData(
+        primaryColor: Color.fromRGBO(58, 66, 86, 1.0),
+        //fontFamily: 'Manrope'
+      ),
       home: ListPage(title: 'Lessons'),
     );
   }

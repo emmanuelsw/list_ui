@@ -22,7 +22,7 @@ class _ListContentState extends State<ListContent> {
       child: ListView.builder(
         scrollDirection: Axis.vertical,
         shrinkWrap: true,
-        itemCount: 10,
+        itemCount: 7,
         itemBuilder: (BuildContext context, int index) {
           return ListCard(lessons[index]);
         },

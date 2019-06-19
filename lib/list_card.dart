@@ -9,7 +9,7 @@ class ListCard extends StatelessWidget {
 
   ListCard(this.lesson);
 
-  Widget listTile(BuildContext context, Lesson lesson) {
+  Widget listTile(BuildContext context) {
     return ListTile(
       contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
       leading: Container(
@@ -76,7 +76,7 @@ class ListCard extends StatelessWidget {
           )
         ]
       ),
-      child: listTile(context, lesson),
+      child: listTile(context),
     );
   }
 }

@@ -20,9 +20,7 @@ class _ListContentState extends State<ListContent> {
   Widget build(BuildContext context) {
     return Container(
       child: ListView.builder(
-        scrollDirection: Axis.vertical,
-        shrinkWrap: true,
-        itemCount: 7,
+        itemCount: lessons.length,
         itemBuilder: (BuildContext context, int index) {
           return ListCard(lessons[index]);
         },

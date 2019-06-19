@@ -1,4 +1,5 @@
 import 'package:beautiful_list/model/lesson.dart';
+import 'package:beautiful_list/data/car_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -83,11 +84,7 @@ class DetailPage extends StatelessWidget {
       children: <Widget>[
         SizedBox(height: 80.0),
         Icon(
-          IconData(
-            0xF2C1,
-            fontFamily: CupertinoIcons.iconFont,
-            fontPackage: CupertinoIcons.iconFontPackage,
-          ),
+          CarIcons.taxi,
           color: Colors.white,
           size: 40.0,
         ),

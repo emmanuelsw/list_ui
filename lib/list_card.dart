@@ -2,6 +2,7 @@ import 'package:beautiful_list/model/lesson.dart';
 import 'package:beautiful_list/detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:beautiful_list/data/car_icons.dart';
 
 class ListCard extends StatelessWidget {
   final Lesson lesson;
@@ -20,11 +21,7 @@ class ListCard extends StatelessWidget {
           ),
         ),
         child: Icon(
-          IconData(
-            0xF2C1,
-            fontFamily: CupertinoIcons.iconFont,
-            fontPackage: CupertinoIcons.iconFontPackage,
-          ),
+          CarIcons.taxi,
           color: Colors.white,
           size: 30.0,
         ),
